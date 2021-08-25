@@ -2,6 +2,8 @@
 
 This game has a player create and manage the lottery, while players upon a game starting have options to buy tickets, check the pot, and get the winning numbers for the lotto. 
 
+Players must have web3 and eth_account installed on an environment to run this game.
+
 ## Player
 Once the creator has deployed the contract, the player will run `python cli_player.py` in bash.
 
