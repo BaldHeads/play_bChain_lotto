@@ -2,16 +2,6 @@
 
 This game has a player create and manage the lottery, while players upon a game starting have options to buy tickets, check the pot, and get the winning numbers for the lotto. 
 
-## Creator
-The creator will run ` python cli_creator.py` and input:
-- private key for the account starting contract
-- private key for beneficiary 
-
-A contract address will then be generated, jot down that address to share with potential players
-
-From here, the creator can check the pot, finalize the lotto, and generate the winning numbers
-- generating the winning numbers requires the lotto to be finalized (recommended to wait for enough players to generate a suitable pot)
-
 ## Player
 Once the creator has deployed the contract, the player will run `python cli_player.py` in bash.
 
