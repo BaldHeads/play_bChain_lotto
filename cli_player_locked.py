@@ -1,8 +1,11 @@
 import json
+from eth_keys.datatypes import PrivateKey
 from web3 import Web3
 
 from eth_account import Account
 import random
+
+from web3.types import SignedTx
 
 # User
 
@@ -54,6 +57,7 @@ def buyTicket(six_numbers):
             "nonce": web3.eth.getTransactionCount(user_account),
         })
         
+    #transact({"value": web3.toWei(1, "ether")})
     signed_tx = web3.eth.account.sign_transaction(tx, private_key=pvtkey)
     tx_hash = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
     tx_receipt = web3.eth.waitForTransactionReceipt(tx_hash)
